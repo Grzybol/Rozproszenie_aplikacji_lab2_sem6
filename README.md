@@ -43,7 +43,7 @@ Request:
 GET http://localhost:8081/a1B2c3
 Response:
 Automatyczne przekierowanie do https://bestservers.fun/
-
+```text
 Struktura projektu
 Rozproszone_aplikacje_lab2/
 ├── docker-compose.yml
