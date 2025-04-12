@@ -1,0 +1,4 @@
+org\bestservers\UrlShortenerApplication.class
+org\bestservers\URLShortenerController$URLShortenerService.class
+org\bestservers\URLShortenerController$URLStorageService.class
+org\bestservers\URLShortenerController.class

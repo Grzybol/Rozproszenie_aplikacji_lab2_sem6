@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    environment:
+      POSTGRES_DB: url_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  url-shortener:
+    build:
+      context: ./url-shortener
+    container_name: url-shortener
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+  url-redirector:
+    build:
+      context: ./url-redirector
+    container_name: url-redirector
+    ports:
+      - "8081:8081"
+    depends_on:
+      - postgres
+
+volumes:
+  pgdata:
