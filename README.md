@@ -19,7 +19,7 @@ Oba serwisy korzystają ze wspólnej bazy danych PostgreSQL (również uruchomio
 
 ---
 
-## 🚀 Uruchamianie projektu
+##  Uruchamianie projektu
 
 1. Zbuduj i uruchom cały projekt w Dockerze:
 
@@ -30,7 +30,8 @@ Serwis	Port	Opis
 url-shortener	8080	Skracanie URL
 url-redirector	8081	Przekierowanie
 postgres	5432	Wewnętrzna baza danych
-📌 Przykładowe użycie
+
+Przykładowe użycie
 1. Skrócenie linku
 Request:
 GET http://localhost:8080/shorten?url=https://bestservers.fun/&ttl=120
